@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 908499539}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: vampiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,8 +361,10 @@ MonoBehaviour:
   nome: DIO
   armado: 0
   corDosOlhos: castanhos
+  velocidade: 0
   sangue: 8
   "cl\xE3": LaSombra
+  constante: 15
 --- !u!136 &908499535
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -378,14 +380,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.86982596
+  m_Height: 2.5235026
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: -0.1629796, y: 0.2617513, z: 0.206846}
 --- !u!23 &908499536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -448,7 +450,7 @@ Transform:
   m_GameObject: {fileID: 908499533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.28, y: 1.55, z: 0}
+  m_LocalPosition: {x: 3.91, y: 1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -571,9 +573,10 @@ GameObject:
   - component: {fileID: 1696134225}
   - component: {fileID: 1696134224}
   - component: {fileID: 1696134228}
+  - component: {fileID: 1696134229}
   m_Layer: 0
   m_Name: w
-  m_TagString: Untagged
+  m_TagString: humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -597,10 +600,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.68724763
+  m_Height: 2.1393123
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.026940227, y: 0.06965613, z: 0}
 --- !u!23 &1696134225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -663,7 +666,7 @@ Transform:
   m_GameObject: {fileID: 1696134222}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.59, z: 0}
+  m_LocalPosition: {x: 2.73, y: 1.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -685,6 +688,34 @@ MonoBehaviour:
   nome: Jonathan
   armado: 1
   corDosOlhos: castanhos
+  velocidade: 0
+--- !u!54 &1696134229
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696134222}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
